@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #007BFF; /* Mavi arka plan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    display: flex; /* Yan yana yerleştirmek için */
+    width: 100%;
+    max-width: 900px; /* Maksimum genişlik */
+    margin: 0 auto; /* Ortalamak için */
+}
+
+.forum-container {
+    background: #ffffff; /* Beyaz arka plan */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-right: 20px;
+    flex: 1; /* Sağdaki mesajlaşma alanına göre boyutlanır */
+}
+
+.forum-container h2 {
+    margin: 0 0 10px;
+}
+
+#forumPosts {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.forum-post {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.chat-container {
+    background: #ffffff; /* Beyaz arka plan */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 450px; 
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-area {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nameInput {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#setNameButton {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#setNameButton:hover {
+    background-color: #0056b3;
+}
+
+.chat-area {
+    height: 400px; 
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px; 
+    background-color: #f9f9f9; /* Açık gri arka plan */
+    font-size: 16px; 
+    color: #333; 
+}
+
+.chat-area div {
+    margin: 10px 0; 
+    padding: 10px; 
+    border-radius: 5px; 
+    background-color: #e9ecef; /* Mesajların arka planı */
+}
+
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#messageInput {
+    flex: 1;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#sendButton {
+    padding: 12px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #28A745; 
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#sendButton:hover {
+    background-color: #218838; 
+}
+
+.wait-message {
+    color: red; 
+    font-weight: bold;
+    margin-bottom: 10px; 
+    text-align: center;
+    background-color: #fff3cd; /* Açık sarı arka plan */
+    border: 1px solid #ffeeba; /* Açık sarı kenar */
+    padding: 10px; /* İç boşluk */
+    border-radius: 5px; /* Yuvarlak köşeler */
+}
